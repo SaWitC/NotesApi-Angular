@@ -1,0 +1,41 @@
+<form novalidate #form="ngForm" (submit)="onSubmit(form)">
+  <input type="hidden" name="Id" [value]="service.formData.Id" />
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control form-control-lg" placeholder="title" name="Title" #Title="ngModel" [(ngModel)]="service.formData.Title"
+           required [class.invalid]="Title.invalid && Title.touched" maxlength="100"/>
+  </div>
+
+  <div class="form-group">
+    <label>Description</label>
+    <input type="text" class="form-control form-control-lg" placeholder="Description" name="Description" #Description="ngModel" [(ngModel)]="service.formData.Description"
+           required maxlength="1000"/>
+  </div>
+
+  <div class="form-group">
+    <label>Created</label>
+    <input type="text" class="form-control form-control-lg" placeholder="CreatedDate" name="CreatedDate" #CreatedDate="ngModel" [(ngModel)]="service.formData.CreatedDate"
+           />
+  </div>
+
+  <div class="form-group">
+    <label>Updated</label>
+    <input type="text" class="form-control form-control-lg" placeholder="UpdatedDate" name="UpdatedDate" #UpdatedDate="ngModel" [(ngModel)]="service.formData.UpdatedDate"
+           />
+  </div>
+
+  <div class="form-group">
+    <label>Completed</label>
+    <input type="text" class="form-control form-control-lg" placeholder="CompletedDate" name="CompletedDate" #CompletedDate="ngModel" [(ngModel)]="service.formData.CompletedDate"
+           />
+  </div>
+
+  <div class="form-group">
+    <label>SecCode</label>
+    <input type="text" class="form-control form-control-lg" placeholder="SecurityCode" name="SecurityCode" #SecurityCode="ngModel" [(ngModel)]="service.formData.SecurityCode"
+           />
+  </div>
+  <div class="form-group">
+    <button class="btn btn-info btn-lg input-group" [disabled]="form.invalid" type="submit">submit</button>
+  </div>
+</form>

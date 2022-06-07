@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\note-details",
+    "\\src\\app\\note-details\\note-details-form",
+    "\\src\\app\\shared",
+    "\\src\\environments"
+  ],
+  "SelectedNode": "\\src\\app\\shared\\note-details.service.ts",
+  "PreviewInSolutionExplorer": false
+}
