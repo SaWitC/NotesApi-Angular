@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NoteDetailsService } from '../shared/note-details.service';
 
 @Component({
   selector: 'app-note-details',
@@ -8,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoteDetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public  service:NoteDetailsService) { }
 
   ngOnInit(): void {
+    this.service.refreshList();
+    console.log(this.service.refreshList());
   }
+
 
 }

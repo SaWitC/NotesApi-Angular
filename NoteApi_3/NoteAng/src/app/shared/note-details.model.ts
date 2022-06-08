@@ -1,12 +1,12 @@
 export class NoteDetails {
 
-  Id: number=0;
-  Title: string="";
-  Description: string = "";
-  CreatedDate: string = "";
-  UpdatedDate: string = "";
-  CompletedDate: string="";
-  SecurityCode: string="";
+  id: number=0;
+  title: string="";
+  description: string = "";
+  createdDate: string = "";
+  updatedDate: string = "";
+  completedDate: string="";
+  securityCode: string="";
 
 
 }

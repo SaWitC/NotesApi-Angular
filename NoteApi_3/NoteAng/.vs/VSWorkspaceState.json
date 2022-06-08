@@ -8,6 +8,6 @@
     "\\src\\app\\shared",
     "\\src\\environments"
   ],
-  "SelectedNode": "\\src\\app\\shared\\note-details.service.ts",
+  "SelectedNode": "\\src\\app\\note-details\\note-details.component.html",
   "PreviewInSolutionExplorer": false
 }

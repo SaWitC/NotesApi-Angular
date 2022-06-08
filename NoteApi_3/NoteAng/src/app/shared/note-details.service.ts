@@ -9,10 +9,20 @@ export class NoteDetailsService {
 
   constructor(private http: HttpClient) { }
   formData: NoteDetails = new NoteDetails();
+  list:NoteDetails[];
 
   readonly baseUrl = 'http://localhost:22974/api/Notes';
 
   postNoteDetail() {
     return this.http.post(this.baseUrl, this.formData)
+  }
+
+  refreshList() {
+    this.http.get(this.baseUrl)
+      .toPromise().then(res => {
+        this.list = res as NoteDetails[];
+        console.log(res as NoteDetails[]);
+      });
+    //console.log("dd" + );
   }
 }

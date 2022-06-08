@@ -7,5 +7,32 @@
   </div>
   <div class="col-md-6">
     <span>list of notes</span>
+    <table class="table">
+      <thead class="thead-light">
+        <tr>Title</tr>
+        <tr>Descript</tr>
+        <tr>Created Date</tr>
+        <tr>Updated Date</tr>
+        <tr>Deleted Date</tr>
+        <tr>Secred Code</tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pd of service.list">
+          <!--<td>{{pd.id}}</td>-->
+          <td>{{pd.title}}</td>
+          <td>{{pd.description}}</td>
+          
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
+
+
+<!--Id: number=0;
+Title: string="";
+Description: string = "";
+CreatedDate: string = "";
+UpdatedDate: string = "";
+CompletedDate: string="";
+SecurityCode: string="";-->
