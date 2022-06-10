@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {NoteDetailsService } from '../shared/note-details.service';
+import {NoteDetails} from "../shared/note-details.model";
+
 
 @Component({
   selector: 'app-note-details',
@@ -14,6 +16,10 @@ export class NoteDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.service.refreshList();
     console.log(this.service.refreshList());
+  }
+
+  PutData(selected:NoteDetails) {
+    this.service.formData = selected;
   }
 
 
