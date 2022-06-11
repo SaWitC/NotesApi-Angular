@@ -24,16 +24,16 @@ export class NoteDetailsComponent implements OnInit {
   PutData(selected:NoteDetails) {
     this.service.formData = selected;
   }
-
-
-//  this.service.postNoteDetail().subscribe(
-//    res => {
-//  this.resetForm(form);
-//  this.toastr.success("Data submited", "Note Detail Register");
-//},
-//err => {
-//  console.log(err);
-//});
+  complete(id: number) {
+    this.service.completeNote(id).subscribe(
+      res => {
+        this.toastr.success("Completed", "111 222 333");
+        this.service.refreshList();
+      },
+      err => {
+        console.log("Error" + id);
+      })
+  }
 
   RemoweData(id: number) {
     this.service.removeNoteData(id).subscribe(

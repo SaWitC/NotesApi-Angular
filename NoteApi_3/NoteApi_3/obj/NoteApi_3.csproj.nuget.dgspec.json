@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\проекты\\NoteApi_3\\NoteApi_3\\NoteApi_3.csproj": {}
+    "C:\\Users\\USER\\Downloads\\NotesApi-Angular\\NoteApi_3\\NoteApi_3\\NoteApi_3.csproj": {}
   },
   "projects": {
-    "D:\\проекты\\NoteApi_3\\NoteApi_3\\NoteApi_3.csproj": {
+    "C:\\Users\\USER\\Downloads\\NotesApi-Angular\\NoteApi_3\\NoteApi_3\\NoteApi_3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\проекты\\NoteApi_3\\NoteApi_3\\NoteApi_3.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Downloads\\NotesApi-Angular\\NoteApi_3\\NoteApi_3\\NoteApi_3.csproj",
         "projectName": "NoteApi_3",
-        "projectPath": "D:\\проекты\\NoteApi_3\\NoteApi_3\\NoteApi_3.csproj",
+        "projectPath": "C:\\Users\\USER\\Downloads\\NotesApi-Angular\\NoteApi_3\\NoteApi_3\\NoteApi_3.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "D:\\проекты\\NoteApi_3\\NoteApi_3\\obj\\",
+        "outputPath": "C:\\Users\\USER\\Downloads\\NotesApi-Angular\\NoteApi_3\\NoteApi_3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

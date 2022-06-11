@@ -23,6 +23,9 @@ export class NoteDetailsService {
   removeNoteData(id:number) {
     return this.http.delete(`${this.baseUrl}/${id}`);
   }
+  completeNote(id: number) {
+    return this.http.post(`http://localhost:22974/api/Notes/Complete/${id}`, id);
+  }
 
   refreshList() {
     this.http.get(this.baseUrl)

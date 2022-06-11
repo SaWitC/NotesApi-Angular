@@ -104,5 +104,22 @@ namespace NoteApi_3.Controllers
         {
             return _context.Notes.Any(e => e.Id == id);
         }
+
+        [HttpPost("Complete/{id}")]
+        public async Task<ActionResult> Complete(int id)
+        {
+            try
+            {
+                var note = await _context.Notes.FirstOrDefaultAsync(o => o.Id == id);
+                note.CompletedDate = DateTime.Now;
+                _context.Notes.Update(note);
+                await _context.SaveChangesAsync();
+                return Ok();
+            }
+            catch
+            {
+                return BadRequest();
+            }
+        }
     }
 }

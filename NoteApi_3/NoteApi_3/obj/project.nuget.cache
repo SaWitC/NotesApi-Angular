@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+S/ytNEdXsW4BtjN+Y1xfmrEh4TPNKwwjCJ7H2OXs3sHmQ8t4MjmVm3QPFvjT3ioTLbfUohoUv/57Cr+D4DIWg==",
+  "dgSpecHash": "RjA/Ia3knuv+bdUuY0izgorFNu3F+wav7ylONYNSZKXeXnpG3wnioP8W65FkmLxxV30PRwACOU77n5tL4f6inw==",
   "success": true,
-  "projectFilePath": "D:\\проекты\\NoteApi_3\\NoteApi_3\\NoteApi_3.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Downloads\\NotesApi-Angular\\NoteApi_3\\NoteApi_3\\NoteApi_3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

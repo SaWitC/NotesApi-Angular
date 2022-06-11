@@ -16,6 +16,7 @@
             <th>Updated Date</th>
             <th>Deleted Date</th>
             <th>Secred Code</th>
+            <th>Complete</th>
             <th><p class="bg-danger">Remowe</p></th>
           </tr>
         </thead>
@@ -27,6 +28,7 @@
             <td (click)="PutData(pd)"> {{pd.createdDate}}</td>
             <td (click)="PutData(pd)"> {{pd.updatedDate}}</td>
             <td (click)="PutData(pd)"> {{pd.completedDate}}</td>
+            <td><button (click)="complete(pd.id)" class="btn,bg-info">Complete {{pd.id}}</button></td>
             <td><button (click)="RemoweData(pd.id)" class="btn,bg-danger">Remove {{pd.id}}</button></td>
           </tr>
         </tbody>
