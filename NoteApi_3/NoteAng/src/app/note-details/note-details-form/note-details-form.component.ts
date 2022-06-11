@@ -20,15 +20,35 @@ export class NoteDetailsFormComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
+    if (this.service.formData.id == 0) {
+      this.createNote(form);
+    } else {
+      this.updateNote(form);
+    }
+  }
+
+  createNote(form: NgForm) {
     this.service.postNoteDetail().subscribe(
       res => {
         this.resetForm(form);
-        this.toastr.success("Data submited","Note Detail Register");
+        this.toastr.success("Data submited", "Note Detail Register");
       },
       err => {
         console.log(err);
       });
   }
+  updateNote(form: NgForm) {
+    this.service.putNoteDetail().subscribe(
+      res => {
+        this.resetForm(form);
+        this.service.refreshList();
+        this.toastr.info("Data Updated", "Note Detail Register");
+      },
+      err => {
+        console.log(err);
+      });
+  }
+
   resetForm(form: NgForm) {
     form.form.reset();
     this.service.formData = new NoteDetails();

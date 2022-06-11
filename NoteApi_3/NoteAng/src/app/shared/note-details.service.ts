@@ -14,9 +14,14 @@ export class NoteDetailsService {
   readonly baseUrl = 'http://localhost:22974/api/Notes';
 
   postNoteDetail() {
-    
-      return this.http.post(this.baseUrl, this.formData);
-    
+    return this.http.post(this.baseUrl, this.formData);
+  }
+  putNoteDetail() {
+    return this.http.put(`${this.baseUrl}/${this.formData.id}`, this.formData);
+  }
+
+  removeNoteData(id:number) {
+    return this.http.delete(`${this.baseUrl}/${id}`);
   }
 
   refreshList() {
